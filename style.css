@@ -476,13 +476,15 @@ figure > div {
 }
 
 
+/*---------------------------------------------- RULE STYLING --------------------------------         */
+
 .rule-page{
   height: 100vh;
   width: 100vw;
   scroll-behavior: smooth;
   position: relative;
   overflow-x: hidden;
-  background-color: #ffffff;
+  background-color: rgb(231,231,231);
 }
 
 .rules-box{
@@ -491,6 +493,7 @@ figure > div {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   background-color: #ffffff;
   position: absolute;
+  border-radius: 13px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -506,7 +509,8 @@ figure > div {
 .game-img{
   height: 35%;
   width: 80%;
-  background-image: linear-gradient(blue,red);
+  background-image: linear-gradient(#614385 ,#516395);
+  background-size: cover;
 }
 
 .rule-text{
@@ -524,4 +528,85 @@ ul {
 ul li {
   margin-bottom: 5px;
   font-size: small;
+}
+
+
+/*---------------------------------------------------- Form Styling --------------------------------------------  */
+
+/* Reset some default styles for better consistency */
+body, h1, label, input, select {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a background color and text color to the body */
+ .form-page{
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  overflow-y: hidden;
+}
+
+/* Style the header */
+.heading{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style the main content */
+main {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style form elements */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+  main {
+      max-width: 100%;
+      padding: 10px;
+  }
+  
+  input[type="text"],
+  select {
+      width: 100%;
+  }
+  
+  button {
+      width: 100%;
+  }
 }
