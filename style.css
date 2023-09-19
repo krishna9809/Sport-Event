@@ -474,3 +474,54 @@ figure > div {
 		grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 	}
 }
+
+
+.rule-page{
+  height: 100vh;
+  width: 100vw;
+  scroll-behavior: smooth;
+  position: relative;
+  overflow-x: hidden;
+  background-color: #ffffff;
+}
+
+.rules-box{
+  height: 30rem;
+  width: 25em;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  align-items: center;
+  gap: 1rem;
+ 
+}
+
+.game-img{
+  height: 35%;
+  width: 80%;
+  background-image: linear-gradient(blue,red);
+}
+
+.rule-text{
+  padding-top: 10px;
+  height: 35%;
+  width: 80%;
+ 
+}
+
+ul {
+  margin-top: 2px;
+  list-style: none;
+}
+
+ul li {
+  margin-bottom: 5px;
+  font-size: small;
+}
